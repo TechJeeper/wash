@@ -1,0 +1,55 @@
+{
+  "name": "wash",
+  "author": "TechJeeper",
+  "version": "1.0.0",
+  "keywords": [
+    "pebble-app",
+    "watchface",
+    "color",
+    "minimal",
+    "customizable"
+  ],
+  "private": true,
+  "dependencies": {
+    "@moddable/pebbleproxy": "^0.2.0",
+    "@rebble/clay": "^1.0.10"
+  },
+  "pebble": {
+    "displayName": "Wash",
+    "uuid": "3d401adf-9dc9-4b13-9411-2289640e8347",
+    "projectType": "moddable",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "emery",
+      "gabbro"
+    ],
+    "capabilities": [
+      "configurable",
+      "health"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "Palette",
+      "CustomBg",
+      "CustomWashA",
+      "CustomWashB",
+      "CustomWashC",
+      "CustomFg",
+      "Composition",
+      "FieldCount",
+      "Softness",
+      "FontScale",
+      "TimePlace",
+      "Caption",
+      "Use24Hour",
+      "LeadingZero",
+      "HourlyReflow"
+    ],
+    "resources": {
+      "media": []
+    }
+  }
+}

@@ -1,0 +1,17 @@
+Soft color fields. Huge time. One quiet caption.
+
+Wash turns your Pebble Time 2 or Round 2 into a tiny gallery piece: overlapping rounded color slabs fill the screen, and the time sits large and calm on top. No weather clutter. No dashboard chrome. Just atmosphere you can customize.
+
+PALETTES
+Harbor, Blush, Night Bloom, Paper, Ochre, Fog, Acid, Ink — or pick your own background, three wash colors, and time color.
+
+COMPOSITION
+Cascade, Center bloom, Edge hug, Editorial, or Auto (the layout reflows through the day). Choose 2–4 fields and soft halo edges or hard cuts.
+
+TIME
+Display, classic, or compact numerals. Center, lower-left editorial, or upper banner. Caption can be date, weekday, battery, steps, or off.
+
+BATTERY
+Updates once a minute. No continuous seconds. No live heart-rate sampling. At 15% battery, washes drop away and only time + battery remain.
+
+Open Wash settings in the Pebble app to make it yours.
