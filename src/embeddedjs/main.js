@@ -237,19 +237,15 @@ readSteps();
 
 /* ── Drawing helpers ──────────────────────────────────────────────────────── */
 
+/* Pebble Poco: drawRoundRect(x, y, w, h, color, radius[, corners]) — no fillEllipse. */
 function fillRoundRect(color, x, y, w, h, r) {
   if (w <= 0 || h <= 0) return;
-  if (r <= 0 || w < r * 2 || h < r * 2) {
+  if (r <= 0) {
     render.fillRectangle(color, x, y, w, h);
     return;
   }
-  render.fillRectangle(color, x + r, y, w - 2 * r, h);
-  render.fillRectangle(color, x, y + r, r, h - 2 * r);
-  render.fillRectangle(color, x + w - r, y + r, r, h - 2 * r);
-  render.fillEllipse(color, x, y, 2 * r, 2 * r);
-  render.fillEllipse(color, x + w - 2 * r, y, 2 * r, 2 * r);
-  render.fillEllipse(color, x, y + h - 2 * r, 2 * r, 2 * r);
-  render.fillEllipse(color, x + w - 2 * r, y + h - 2 * r, 2 * r, 2 * r);
+  const rad = Math.min(r, (w / 2) | 0, (h / 2) | 0, 30);
+  render.drawRoundRect(x, y, w, h, color, rad);
 }
 
 function fillSoftRoundRect(color, halo, x, y, w, h, r) {
